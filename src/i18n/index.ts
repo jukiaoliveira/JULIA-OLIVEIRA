@@ -6,9 +6,9 @@ const resources = {
   pt: {
     translation: {
       header: {
-        projects: 'Projetos',
-        about: 'Sobre',
-        contact: 'Contato'
+      projects: 'Projetos',
+      about: 'Sobre',
+      contact: 'WhatsApp'
       },
       hero: {
         titleLine1: 'SISTEMAS REAIS.',
@@ -46,9 +46,9 @@ const resources = {
   en: {
     translation: {
       header: {
-        projects: 'Projects',
-        about: 'About',
-        contact: 'Contact'
+      projects: 'Projects',
+      about: 'About',
+      contact: 'Let\'s Talk'
       },
       hero: {
         titleLine1: 'REAL SYSTEMS.',

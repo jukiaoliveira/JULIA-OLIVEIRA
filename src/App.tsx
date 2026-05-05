@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#050505] text-[#f5f5f5] font-baloo selection:bg-[#ccff00] selection:text-black">
-      {/* Header Fixo Sólido */}
       <header className="fixed top-0 left-0 w-full p-6 md:px-16 flex justify-between items-center bg-[#050505] border-b border-zinc-900 z-50">
         <div className="group cursor-pointer">
           <span className="font-bebas text-4xl tracking-tighter text-[#ccff00] group-hover:text-white transition-colors uppercase">
@@ -41,9 +40,10 @@ function App() {
             </button>
 
             <div className="w-[1px] h-4 bg-zinc-800 hidden md:block"></div>
-
             <a
-              href="mailto:seuemail@gmail.com"
+              href="https://wa.me/5535992656047" // Substitua pelo seu número: 55 (Brasil) + 35 (DDD) + seu número
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#ccff00] text-black px-6 py-1.5 rounded-full font-bebas text-lg tracking-widest hover:bg-white transition-colors uppercase"
             >
               {t("header.contact")}
@@ -68,7 +68,6 @@ function App() {
             <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-2 border-r-2 border-[#ccff00] opacity-30 group-hover:opacity-100 transition-all duration-500"></div>
           </div>
 
-          {/* Lado Direito: Textos */}
           <div className="flex flex-col items-center md:items-start max-w-2xl">
             <div className="flex items-center gap-3 text-[#ccff00] mb-6">
               <span className="font-bebas text-lg tracking-[0.3em] uppercase underline decoration-dotted">
@@ -88,7 +87,6 @@ function App() {
               {t("hero.subtitle")}
             </p>
 
-            {/* Links de Contato usando SPAN como botões */}
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <a
                 href="https://github.com/jukiaoliveira"
@@ -127,7 +125,6 @@ function App() {
               </h2>
             </div>
 
-            {/* Conteúdo Estratégico */}
             <div className="lg:col-span-8">
               <h3 className="text-white text-3xl md:text-5xl font-medium mb-12 leading-tight">
                 {t("about.subtitle")}
@@ -137,7 +134,6 @@ function App() {
                 <p>{t("about.p1")}</p>
                 <p>{t("about.p2")}</p>
 
-                {/* Grid de Tags Minimalistas */}
                 <div className="grid grid-cols-2 gap-y-10 pt-12 border-t border-zinc-900">
                   <div>
                     <p className="font-bebas text-[#ccff00] tracking-widest text-sm mb-4">
@@ -177,7 +173,7 @@ function App() {
           </div>
         </section>
 
-        {/* SEÇÃO PROJETOS - Wide Style */}
+        {/* SEÇÃO PROJETOS */}
         <section id="projetos" className="py-32">
           <div className="flex items-center gap-4 mb-20">
             <h2 className="font-bebas text-4xl md:text-6xl tracking-tighter text-zinc-800 uppercase italic">
@@ -189,19 +185,15 @@ function App() {
           <div className="space-y-32">
             {/* PROJETO 01 - PICKWISE AI */}
             <div className="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              {/* Background Decorativo que aparece no Hover */}
               <div className="absolute -inset-x-6 -inset-y-10 bg-zinc-900/30 rounded-[40px] scale-95 opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-700 -z-10"></div>
 
-              {/* Lado Esquerdo: Imagem / Mockup com efeito Mágico */}
               <div className="lg:col-span-7 relative aspect-video overflow-hidden rounded-2xl border border-zinc-800 group-hover:border-[#ccff00]/30 transition-all duration-500 bg-[#0a0a0a]">
-                {/* 1. A IMAGEM (Thumbnail) */}
                 <img
                   src="/projects/pickwise-thumb.png"
                   alt="PickWise AI Preview"
                   className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0 z-10"
                 />
 
-                {/* 2. O VÍDEO (Aparece no Hover) */}
                 <video
                   autoPlay
                   loop
@@ -212,11 +204,9 @@ function App() {
                   <source src="/projects/pickwise-video.mp4" type="video/mp4" />
                 </video>
 
-                {/* Gradiente por cima para dar profundidade */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60 z-20 pointer-events-none"></div>
               </div>
 
-              {/* Lado Direito: Info */}
               <div className="lg:col-span-5 lg:pl-10">
                 <div className="inline-block px-3 py-1 border border-[#ccff00] text-[#ccff00] font-bebas text-sm tracking-widest uppercase mb-6">
                   {t("projects.pickwise.tag")}
@@ -269,7 +259,7 @@ function App() {
       <footer className="p-12 md:p-20 text-center border-t border-zinc-900">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-zinc-500 font-bebas text-xl tracking-[0.2em]">
           <p>© 2026 — JÚLIA OLIVEIRA</p>
-          <p className="text-zinc-800">BR / MG</p> {/* Localização discreta */}
+          <p className="text-zinc-800">BR / MG</p>
           <p>{t("footer.developedBy")}</p>
         </div>
       </footer>
