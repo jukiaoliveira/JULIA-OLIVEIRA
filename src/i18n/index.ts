@@ -8,7 +8,7 @@ const resources = {
       header: {
       projects: 'Projetos',
       about: 'Sobre',
-      contact: 'WhatsApp'
+      contact: 'Falar comigo'
       },
       hero: {
         titleLine1: 'SISTEMAS REAIS.',
