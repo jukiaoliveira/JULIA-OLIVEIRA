@@ -39,8 +39,16 @@ const resources = {
             view: "Ver Projeto",
             code: "Código",
             mobileHint: "Toque para ver detalhes"
+        },
+
+        pamart: {
+        tag: "UI/UX & Web App",
+        desc: "Catálogo editorial e montador de cenários dinâmicos para orçamentos de eventos.",
+        view: "Ver Projeto",
+        code: "Código",
+        mobileHint: "Toque para ver detalhes"
         }
-    }
+      }
     }
   },
   en: {
@@ -79,8 +87,15 @@ const resources = {
             view: "View Project",
             code: "Source Code",
             mobileHint: "Tap to see details"
+        },
+        pamart: {
+        tag: "UI/UX & Web App",
+        desc: "An editorial catalog and dynamic scenery builder for event budgeting.",
+        view: "View Project",
+        code: "Source Code",
+        mobileHint: "Tap to see details"
         }
-    }
+      }
     }
   }
 };
