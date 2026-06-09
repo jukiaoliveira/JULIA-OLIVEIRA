@@ -6,9 +6,9 @@ const resources = {
   pt: {
     translation: {
       header: {
-      projects: 'Projetos',
-      about: 'Sobre',
-      contact: 'Falar comigo'
+        projects: 'Projetos',
+        about: 'Sobre',
+        contact: 'Falar comigo'
       },
       hero: {
         titleLine1: 'SISTEMAS REAIS.',
@@ -20,7 +20,7 @@ const resources = {
         title: "02 / SOBRE",
         subtitle: "Arquitetando interfaces com rigor técnico e alma criativa.",
         p1: "Minha formação em ADS me deu a base estrutural, mas é na interseção entre o código e o design que eu realmente me encontro. Não vejo o Front-end apenas como estética, mas como a ferramenta principal para materializar ideias e conectar marcas a pessoas.",
-        p2: "Escolher o meu trabalho é optar por uma visão que equilibra a precisão do desenvolvimento com a fluidez da criação. Desenvolvo interfaces que são limpas, performáticas e que respeitam a identidade de cada projeto, garantindo que a tecnologia nunca seja um obstáculo para a experiência.",
+        p2: "Escolher o meu trabalho é optar por uma vision que equilibra a precisão do desenvolvimento com a fluidez da criação. Desenvolvo interfaces que são limpas, performáticas e que respeitam a identidade de cada projeto, garantindo que a tecnologia nunca seja um obstáculo para a experiência.",
         skills: {
           core: "Essencial",
           visual: "Visual",
@@ -40,13 +40,19 @@ const resources = {
             code: "Código",
             mobileHint: "Toque para ver detalhes"
         },
-
         pamart: {
-        tag: "UI/UX & Web App",
-        desc: "Catálogo editorial e montador de cenários dinâmicos para orçamentos de eventos.",
-        view: "Ver Projeto",
-        code: "Código",
-        mobileHint: "Toque para ver detalhes"
+            tag: "UI/UX & Web App",
+            desc: "Catálogo editorial e montador de cenários dinâmicos para orçamentos de eventos.",
+            view: "Ver Projeto",
+            code: "Código",
+            mobileHint: "Toque para ver detalhes"
+        },
+        orkut: {
+            tag: "Concept / UI & Dev",
+            desc: "Uma releitura da rede social mais icônica dos anos 2000. O visual clássico do Orkut redesenhado com uma interface moderna, interações fluidas e adaptado para a web de 2026.",
+            view: "Ver Projeto",
+            code: "Código",
+            mobileHint: "Toque para ver detalhes"
         }
       }
     }
@@ -54,9 +60,9 @@ const resources = {
   en: {
     translation: {
       header: {
-      projects: 'Projects',
-      about: 'About',
-      contact: 'Let\'s Talk'
+        projects: 'Projects',
+        about: 'About',
+        contact: 'Let\'s Talk'
       },
       hero: {
         titleLine1: 'REAL SYSTEMS.',
@@ -89,16 +95,24 @@ const resources = {
             mobileHint: "Tap to see details"
         },
         pamart: {
-        tag: "UI/UX & Web App",
-        desc: "An editorial catalog and dynamic scenery builder for event budgeting.",
-        view: "View Project",
-        code: "Source Code",
-        mobileHint: "Tap to see details"
+            tag: "UI/UX & Web App",
+            desc: "An editorial catalog and dynamic scenery builder for event budgeting.",
+            view: "View Project",
+            code: "Source Code",
+            mobileHint: "Tap to see details"
+        },
+        orkut: {
+            tag: "Concept / UI & Dev",
+            desc: "A conceptual redesign of the most iconic social network of the 2000s. The classic Orkut look brought back with a modern interface, fluid interactions, and adapted for the 2026 web.",
+            view: "View Project",
+            code: "Source Code",
+            mobileHint: "Tap to see details"
         }
       }
     }
   }
 };
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)

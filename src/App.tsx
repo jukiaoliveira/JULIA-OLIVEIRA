@@ -41,7 +41,7 @@ function App() {
 
             <div className="w-[1px] h-4 bg-zinc-800 hidden md:block"></div>
             <a
-              href="https://wa.me/5535992656047" // Substitua pelo seu número: 55 (Brasil) + 35 (DDD) + seu número
+              href="https://wa.me/5535992656047"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#ccff00] text-black px-6 py-1.5 rounded-full font-bebas text-lg tracking-widest hover:bg-white transition-colors uppercase"
@@ -286,7 +286,7 @@ function App() {
                 {/* CTAs Linkados com as chaves corretas */}
                 <div className="flex gap-8 font-bebas text-2xl tracking-widest uppercase">
                   <a
-                    href="#" // Substitua pelo link se rodar o deploy na Vercel
+                    href="#"
                     target="_blank"
                     className="flex items-center gap-2 text-white hover:text-[#ccff00] transition-all group/link"
                   >
@@ -301,6 +301,71 @@ function App() {
                     className="flex items-center gap-2 text-zinc-600 hover:text-white transition-all"
                   >
                     {t("projects.pamart.code")}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* PROJETO 03 - ORKUT 2026 */}
+            <div className="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div className="absolute -inset-x-6 -inset-y-10 bg-zinc-900/30 rounded-[40px] scale-95 opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-700 -z-10"></div>
+
+              {/* Lado do Preview Visual */}
+              <div className="lg:col-span-7 relative aspect-video overflow-hidden rounded-2xl border border-zinc-800 group-hover:border-[#ccff00]/30 transition-all duration-500 bg-[#0a0a0a]">
+                <img
+                  src="/projects/orkut-thumb.png"
+                  alt="Orkut 2026 Preview"
+                  className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0 z-10"
+                />
+
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                >
+                  <source src="/projects/orkut-video.mp4" type="video/mp4" />
+                </video>
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60 z-20 pointer-events-none"></div>
+              </div>
+
+              {/* Lado dos Textos Traduzidos */}
+              <div className="lg:col-span-5 lg:pl-10">
+                <div className="inline-block px-3 py-1 border border-[#ccff00] text-[#ccff00] font-bebas text-sm tracking-widest uppercase mb-6">
+                  {t("projects.orkut.tag")}
+                </div>
+
+                <h3 className="font-bebas text-5xl md:text-7xl mb-6 tracking-tighter leading-none text-white group-hover:text-[#ccff00] transition-colors">
+                  ORKUT 2026 <br />{" "}
+                  <span className="text-zinc-500">RETRO FUTURE</span>
+                </h3>
+
+                <p className="text-zinc-400 text-xl font-light leading-relaxed mb-10 max-w-md">
+                  {t("projects.orkut.desc")}
+                </p>
+
+                {/* CTAs Linkados */}
+                <div className="flex gap-8 font-bebas text-2xl tracking-widest uppercase">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-white hover:text-[#ccff00] transition-all group/link"
+                  >
+                    {t("projects.orkut.view")}{" "}
+                    <span className="group-hover/link:translate-x-2 transition-transform">
+                      →
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/jukiaoliveira/orkut-2026"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-zinc-600 hover:text-white transition-all"
+                  >
+                    {t("projects.orkut.code")}
                   </a>
                 </div>
               </div>
